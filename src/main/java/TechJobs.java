@@ -120,6 +120,39 @@ public class TechJobs {
     // Print a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
 
-        System.out.println("printJobs is not implemented yet");
+        //        for(HashMap <String, String> jobRow : someJobs ){ //for each loop for hash map//
+//            System.out.println("\n*****");
+//            for(Map.Entry<String,String> hashData: jobRow.entrySet() ){
+//
+//                System.out.println(hashData.getKey() +": " +hashData.getValue());
+//            }
+//            System.out.println("*****");
+//        }
+//        HashMap <String, String> jobRow = someJobs.get(i); // can use this to iterate instead of i if I wanted a more decriptive iterator.//
+
+
+        for(int i=0; i< someJobs.size(); i++){
+
+            System.out.println("\n*****");
+            for(Map.Entry<String,String> hashData: someJobs.get(i).entrySet() ){
+
+                System.out.println(hashData.getKey() +": " +hashData.getValue());
+            }
+            System.out.println("*****");
+
+        }
+        if (someJobs.isEmpty()){
+            System.out.print("No Results");
+        }
+
+//        System.out.println("printJobs is not implemented yet");
+//            for(int i=0; i< findByValue.size(); i++){
+//
+//                for(Map.Entry<String,String> hashData: findByValue.get(i).entrySet() ){
+//
+//                    (hashData.getKey() +": " +hashData.getValue();
+//                }
     }
 }
+
+
